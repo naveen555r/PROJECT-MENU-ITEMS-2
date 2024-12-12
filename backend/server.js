@@ -11,6 +11,8 @@ app.use(bodyParser.json());
 
 // MongoDB Connection
 mongoose.connect('mongodb://127.0.0.1:27017/menuApp', {
+   useNewUrlParser: true,
+  useUnifiedTopology: true,
 
 }).then(() => console.log("MongoDB connected"))
   .catch(err => console.error("MongoDB connection error:", err));
