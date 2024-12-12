@@ -3,7 +3,7 @@
 
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api"; // Base URL for your backend API
+const API_URL = "https://project-menu-items-backend.onrender.com"; // Base URL for your backend API
 
 // Fetch menus from the backend
 export const getMenus = async () => {
